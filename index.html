@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>星露谷物语新手攻略&趣味合集</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f9f5e7;
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%238bc34a' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+      font-family: "微软雅黑", "Comic Sans MS", "幼圆", sans-serif;
+      color: #2c3e50;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      color: #8b4513;
+      font-size: 2.8rem;
+      margin: 30px 0;
+      text-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+      letter-spacing: 2px;
+    }
+
+    .nav-container {
+      background-color: #8bc34a;
+      border-radius: 12px;
+      padding: 15px 0;
+      margin: 20px 0 40px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .nav-menu li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 8px 18px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      font-weight: 600;
+    }
+    .nav-menu li a:hover {
+      background-color: #689f38;
+      transform: translateY(-2px);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      color: #e67e22;
+      margin: 40px 0 20px 0;
+      border-left: 6px solid #e67e22;
+      padding-left: 15px;
+      font-size: 1.8rem;
+    }
+
+    p strong {
+      color: #388e3c;
+      font-size: 1.2rem;
+      display: block;
+      margin: 20px 0 10px 0;
+    }
+
+    ul, ol {
+      margin: 10px 0 20px 40px;
+      padding-left: 10px;
+    }
+    ul li, ol li {
+      margin: 8px 0;
+      padding-left: 10px;
+      position: relative;
+    }
+    ul li::before {
+      color: #e67e22;
+      position: absolute;
+      left: -20px;
+    }
+    ol li::before {
+      color: #8bc34a;
+      position: absolute;
+      left: -20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0 25px 0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    table th {
+      background-color: #f1f8e9;
+      color: #388e3c;
+      padding: 12px;
+      text-align: center;
+      font-size: 1rem;
+      border: 1px solid #e8f5e9;
+    }
+    table td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #e8f5e9;
+      background-color: white;
+    }
+    table tr:hover td {
+      background-color: #f9fbe7;
+      transition: background-color 0.2s;
+    }
+
+    form {
+      background-color: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin: 20px 0;
+    }
+    form p {
+      margin: 15px 0;
+    }
+    form label {
+      color: #8b4513;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 5px;
+    }
+    form input[type="text"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #e8f5e9;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+    form input[type="text"]:focus,
+    form textarea:focus {
+      outline: none;
+      border-color: #8bc34a;
+    }
+    form button {
+      background-color: #8bc34a;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    form button:hover {
+      background-color: #689f38;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+  </style>
+</head>
+<body>
+
+<h1>星露谷物语新手攻略&趣味合集</h1>
+
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+  <img src="https://media.9game.cn/gamebase/ieu-eagle-docking-service/images/20231031/8/24/f4db23f56f7572e2dee73c204f79d7d2.jpeg"
+       alt="标准农场" style="width: 400px; max-width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <img src="https://ts4.tc.mm.bing.net/th/id/OIP-C.w9JOrHYCfVrkdN8A4QxnYwHaE7?pid=ImgDet&w=474&h=315&rs=1&o=7&rm=3"
+       alt="荒野农场" style="width: 400px; max-width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+</div>
+
+
+<div class="nav-container">
+  <ul class="nav-menu">
+    <li><a href="#beginner">新手入门</a></li>
+    <li><a href="#farm">农场规划</a></li>
+    <li><a href="#npc">NPC好感</a></li>
+    <li><a href="#fish">钓鱼指南</a></li>
+    <li><a href="#easteregg">彩蛋合集</a></li>
+    <li><a href="#message">留言板</a></li>
+  </ul>
+</div>
+
+<h2 id="beginner">新手入门（基础操作 + 必备道具）</h2>
+<p><strong>基础操作</strong></p>
+<ul>
+  <li>核心移动：W/A/S/D 或方向键控制角色移动，鼠标点击交互（采集、对话、放置物品）；</li>
+  <li>工具使用：左键使用工具（斧头砍树、镐子挖矿、锄头耕地、洒水壶浇水），右键放置物品 / 打开箱子；</li>
+  <li>时间管理：游戏内 1 天 = 现实 14 分钟（6:00-22:00 可活动，22:00 后不睡觉会晕倒扣钱）；</li>
+  <li>体力值：行动消耗体力，吃料理 / 水果可恢复，体力为 0 会晕倒。</li>
+</ul>
+<p><strong>必备道具</strong></p>
+<ul>
+  <li>初期必解锁：工具箱（砍树挖矿解锁，可存放工具 / 物品）、背包扩容（找皮埃尔杂货店花金币升级，优先升 2 级）；</li>
+  <li>核心工具：铜镐（挖矿效率提升，优先升级）、铁斧头（砍大树更快）、洒水壶（升级后单次浇水范围更大）；</li>
+  <li>随身必备：野莓 / 韭葱（初期恢复体力的免费食材）、纤维（制作稻草人防乌鸦偷菜）、种子（优先种防风草，生长快收益稳）。</li>
+</ul>
+
+<h2 id="farm">农场规划（不同农场类型对比表 + 布局参考）</h2>
+<p><strong>不同农场类型对比</strong></p>
+<table>
+  <tr>
+    <th>农场类型</th>
+    <th>核心优势</th>
+    <th>劣势</th>
+    <th>适合人群</th>
+  </tr>
+  <tr>
+    <td>标准农场</td>
+    <td>耕地面积最大，无地形限制</td>
+    <td>无特殊资源加成</td>
+    <td>新手、专注种植/畜牧</td>
+  </tr>
+  <tr>
+    <td>河边农场</td>
+    <td>钓鱼收益高，河边可直接钓</td>
+    <td>耕地面积仅标准的 1/3</td>
+    <td>喜欢钓鱼的玩家</td>
+  </tr>
+  <tr>
+    <td>森林农场</td>
+    <td>每天刷新硬木，蘑菇树多</td>
+    <td>耕地分散且面积小</td>
+    <td>喜欢采集/制作的玩家</td>
+  </tr>
+  <tr>
+    <td>山顶农场</td>
+    <td>矿区近，宝石 / 矿石产量高</td>
+    <td>耕地少且地形崎岖</td>
+    <td>专注挖矿 / 锻造的玩家</td>
+  </tr>
+  <tr>
+    <td>荒野农场</td>
+    <td>可刷怪物掉落稀有材料</td>
+    <td>夜间会刷怪，新手易翻车</td>
+    <td>有一定经验的硬核玩家</td>
+  </tr>
+</table>
+
+<p><strong>布局参考</strong></p>
+<ul>
+  <li>前期（1-5 天）：左上角划分 10×10 耕地种防风草，右侧留 2×3 区域养 2 只鸡（解锁鸡舍后）；</li>
+  <li>中期（10 天后）：中间区域建洒水器（优先做铱金洒水器），周围种啤酒花/蔓越莓（持续收获）；</li>
+  <li>后期：左下角建畜牧区（牛/羊），右下角建温室（四季种植稀有作物），留 1 格宽的小路方便移动。</li>
+</ul>
+
+
+<h2 id="npc">NPC好感</h2>
+<p><strong>核心 NPC（优先提升好感，解锁剧情/奖励）</strong></p>
+<table>
+  <tr>
+    <th>NPC 名称</th>
+    <th>最爱礼物（+80 好感）</th>
+    <th>喜欢礼物（+45 好感）</th>
+    <th>讨厌/厌恶礼物（扣好感）</th>
+  </tr>
+  <tr>
+    <td>莉亚（Leah）</td>
+    <td>山羊奶酪、松露、七彩碎片</td>
+    <td>所有水果、奶酪、手工菜</td>
+    <td>垃圾、鱼饵、史莱姆泥</td>
+  </tr>
+  <tr>
+    <td>潘姆（Pam）</td>
+    <td>啤酒、披萨、钻石</td>
+    <td>所有酒类、面包、鸡蛋</td>
+    <td>蔬菜、蜂蜜、石英</td>
+  </tr>
+  <tr>
+    <td>玛妮（Marnie）</td>
+    <td>粉色蛋糕、钻石、兔子的脚</td>
+    <td>所有奶制品、鸡蛋、花类</td>
+    <td>矿石、垃圾、鱼饵</td>
+  </tr>
+  <tr>
+    <td>谢恩（Shane）</td>
+    <td>啤酒、披萨、辣椒</td>
+    <td>鸡蛋、奶酪、薯片</td>
+    <td>水果、蜂蜜、钻石（反向讨厌）</td>
+  </tr>
+  <tr>
+    <td>艾米丽（Emily）</td>
+    <td>翡翠、布料、七彩碎片</td>
+    <td>花类、蛋糕、咖啡</td>
+    <td>矿石、垃圾、鱼饵</td>
+  </tr>
+</table>
+<p><strong>通用技巧</strong></p>
+<ul>
+  <li>每天可送 1 次礼物，生日当天送礼好感 ×8（优先给核心 NPC 送最爱礼物）；</li>
+  <li>所有 NPC 都喜欢 “七彩碎片”“黄金南瓜”（稀有，留着给关键 NPC）；</li>
+  <li>避免送 “垃圾、史莱姆泥、鱼饵”（几乎所有 NPC 都讨厌）。</li>
+</ul>
+
+<h2 id="fish">钓鱼指南</h2>
+<p><strong>新手易钓鱼类（地点 + 时间 + 难度）</strong></p>
+<table>
+  <tr>
+    <th>鱼名称</th>
+    <th>出没地点</th>
+    <th>出没时间</th>
+    <th>难度（1-10）</th>
+    <th>备注</th>
+  </tr>
+  <tr>
+    <td>鳟鱼</td>
+    <td>山区河流</td>
+    <td>6:00-18:00（春 / 秋）</td>
+    <td>3</td>
+    <td>售价 80g，可做料理</td>
+  </tr>
+  <tr>
+    <td>鲤鱼</td>
+    <td>小镇池塘 / 农场池塘</td>
+    <td>全天（四季）</td>
+    <td>2</td>
+    <td>最容易钓，新手练手首选</td>
+  </tr>
+  <tr>
+    <td>大嘴鲈鱼</td>
+    <td>森林湖泊</td>
+    <td>6:00-22:00（夏 / 秋）</td>
+    <td>4</td>
+    <td>雨天更容易上钩</td>
+  </tr>
+  <tr>
+    <td>沙丁鱼</td>
+    <td>海滩</td>
+    <td>6:00-17:00（春 / 夏）</td>
+    <td>2</td>
+    <td>成群出没，一次钓多条</td>
+  </tr>
+  <tr>
+    <td>鲷鱼</td>
+    <td>海滩</td>
+    <td>全天（冬）</td>
+    <td>3</td>
+    <td>冬季主要钓鱼收益来源</td>
+  </tr>
+</table>
+<p><strong>钓鱼小技巧</strong></p>
+<ul>
+  <li>钓鱼条绿色区域越小，鱼越稀有；按住鼠标左键让浮标跟着鱼移动，别出绿区；</li>
+  <li>雨天钓鱼概率更高，稀有鱼更容易出；</li>
+  <li>升级鱼竿（玻璃纤维竿→铱金鱼竿）可解锁鱼饵 / 浮标，提升上钩率。</li>
+</ul>
+
+<h2 id="easteregg">彩蛋合集</h2>
+<ol>
+  <li>春季第 15 天的花舞节，和好感度≥4 心的 NPC 跳舞，好感直接 + 2 心；</li>
+  <li>敲石头时站在石头正下方 / 正右方，可一次敲出 2 个矿石；</li>
+  <li>垃圾桶里能捡到皮埃尔杂货店的打折券（每天看一眼，省金币）；</li>
+  <li>给农场的狗 / 猫每天点一下头，会慢慢提升好感，后期会帮你捡道具；</li>
+  <li>用锄头挖农场的 “发光点”，大概率出硬木 / 金块 / 稀有种子；</li>
+  <li>冬季砸开结冰的湖面，能钓到冬季专属的 “冰鱼”，售价翻倍；</li>
+  <li>把钻石放在克林特的熔炉里，能熔成 “钻石戒指”（送礼神器，部分 NPC 最爱）。</li>
+</ol>
+
+<h2 id="message">留言板（分享你的农场小技巧）</h2>
+<form>
+  <p>
+    <label>你的游玩时长</label><br>
+    <input type="text" name="playtime" placeholder="比如：50小时">
+  </p>
+  <p>
+    <label>留言内容</label><br>
+    <textarea name="message" rows="4" placeholder="分享你的独家农场小技巧吧~"></textarea>
+  </p>
+  <p>
+    <button type="submit">提交</button>
+  </p>
+</form>
+
+</body>
+</html>
